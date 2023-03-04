@@ -8,19 +8,40 @@
             background-image: url(./image/121.jpg) ;
             background-repeat: no-repeat; 
          }
-         #baioti{
-            font-size: 50px;
+         @keyframes myfirst{
+            0%   {opacity: 0;}
+            25%  {opacity: 100;}
+            50%  {opacity: 0;}
+            100% {opacity: 0;}
+         }
+         @keyframes second{
+            0%   {opacity: 0;}
+            50%  {opacity: 0;}
+            75%  {opacity: 100;}
+            100% {opacity: 0;}
+         }
+         p{
+            font-size: 80px;
+            position: absolute;
+            text-align: center;
+         }
+         #canghai{
+            animation: myfirst 7.47s infinite;
+         }
+         #taotao{
+            animation: second 7.47s infinite;
          }
        </style>
+       
    </head>
    <body>   
-      <audio src="mav/bgm.wav" ></audio>
-     <p id="baioti">古诗</p>
-      <strong>
-     <p>  &nbsp &nbsp悯农</p>
-      <p><em>&lt;李白&gt;</em></p>
-      <p>锄禾日当午</p>
-      <p>汗滴禾下土</p>
+      
+      <audio src="mav/bgm.wav" controls="controls" autoplay="autoplay" loop="loop"></audio>
+
+      </audio>
+      <p id="canghai">沧海笑</p>
+      <p id="taotao">涛涛两岸潮</p>
       </strong>
    </body>
+   
 </html>
